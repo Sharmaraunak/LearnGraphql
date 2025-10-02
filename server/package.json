@@ -1,0 +1,11 @@
+{
+    "name": "graphql-api",
+    "version": "1.0.0",
+    "description": "A GraphQL API server",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "@apollo/server": "^5.0.0",
+        "graphql": "^16.11.0"
+    }
+}
