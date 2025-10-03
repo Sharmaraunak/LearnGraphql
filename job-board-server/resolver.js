@@ -1,3 +1,5 @@
-export const resolver = {
-    greeting: () => 'Hello World'
+export const resolvers = {
+    Query :{
+        greeting: () => 'Hello world'
+    }
 }
