@@ -1,4 +1,4 @@
-import { connection } from './connection'
+import { connection } from './connection.js'
 
 export const getUserTable = () => {
     return connection.table('user')

@@ -1,15 +1,15 @@
 import { expressjwt } from 'express-jwt'
 import jwt from 'jsonwebtoken'
 
-import { getUserByEmail } from './db/users'
+import { getUserByEmail } from './db/users.js'
 
-const JWT_SECRET = Buffer.from('my-jwt-secret', 'base64')
+const JWT_SECRET = 'random-secret-token'
 
 
-const authMiddleware = expressjwt({
+export const authMiddleware = expressjwt({
 
     algorithms: ['HS256'],
-    credentialsRequired: true,
+    credentialsRequired: false,
     secret: JWT_SECRET
 })
 
