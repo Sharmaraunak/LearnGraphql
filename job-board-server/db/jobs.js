@@ -1,5 +1,5 @@
-import { connection } from './connection'
-import { createId } from './ids'
+import { connection } from './connection.js'
+import { createId } from './ids.js'
 
 export const getJobTable = () => {
     return connection.table('job')
